@@ -23,7 +23,7 @@ class Sentiment extends Component {
 
   render() {
     if (this.state.sentiment == null) {
-      return <div></div>
+      return <div>pusto ##{this.state}##</div>
     }
     return (<div>Sentiment: {this.state.sentiment}</div>)
   }
@@ -69,7 +69,7 @@ class Tweets extends Component {
                   this.addTweet()
                 }
               }}
-              placeholder="Say something . . ." 
+              placeholder="powiedz coś . . ." 
               type="text" className="tweet"/>
             <button type="button" onClick={this.addTweet.bind(this)}>Tweet</button>
         </div>
